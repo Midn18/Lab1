@@ -2,4 +2,6 @@
     <string name="app_name">Lab1</string>
     <string name="textview">TextView</string>
     <string name="calculeaza_idm">Calculeaza IDM</string>
+    <string name="calculeaza_imc">Calculeaza IMC</string>
+    <string name="background">background</string>
 </resources>
