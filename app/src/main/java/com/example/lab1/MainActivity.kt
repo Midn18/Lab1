@@ -21,18 +21,30 @@ class MainActivity : AppCompatActivity() {
         val weightField = findViewById<EditText>(R.id.weight)
         val heightField = findViewById<EditText>(R.id.height)
         val imc = findViewById<TextView>(R.id.result)
+        val comment = findViewById<TextView>(R.id.comment)
 
         button.setOnClickListener {
             val weight: Double = weightField.text.toString().toDouble()
             val height: Double = heightField.text.toString().toDouble()
             val imcValue = calculateIMC(weight, height)
             imc.text = String.format("%.2f", imcValue)
+
+            if (imcValue <= 18.5) {
+                comment.text = "Subponderal"
+            } else if (imcValue in 18.5..24.9) {
+                comment.text = "Normal"
+            } else if (imcValue in 25.0..29.9) {
+                comment.text = "Supraponderal"
+            } else {
+                comment.text = "Obez"
+            }
         }
 
         reset.setOnClickListener {
             weightField.setText("")
             heightField.setText("")
             imc.text = "IMC"
+            comment.text = ""
         }
 
     }
