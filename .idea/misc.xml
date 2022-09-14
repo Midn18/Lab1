@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/1.Univer/3.1/PAM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.236" />
-        <entry key="..\:/1.Univer/3.1/PAM/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/1.Univer/3.1/PAM/app/src/main/res/layout-v23/activity_main.xml" value="0.24895833333333334" />
+        <entry key="..\:/1.Univer/3.1/PAM/app/src/main/res/layout/activity_main.xml" value="0.15129781420765026" />
+        <entry key="..\:/1.Univer/3.1/PAM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1725" />
       </map>
     </option>
   </component>
