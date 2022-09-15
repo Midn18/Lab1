@@ -1,14 +1,12 @@
 package com.example.lab1
 
 import android.annotation.SuppressLint
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import java.lang.Math.pow
-import java.lang.String.format
-import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -50,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateIMC(weight: Double, height: Double): Double {
-        val imc = weight / (pow((height / 100), 2.0))
+        val imc = weight / pow((height / 100), 2.0)
         return imc
     }
 }
